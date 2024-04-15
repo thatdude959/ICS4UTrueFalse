@@ -2,6 +2,7 @@ import javax.swing.JOptionPane;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        
         int startGame = JOptionPane.showConfirmDialog(null, "Ready to play!", null, 0);
          //For some reason YES = 0 NO = 1
 
@@ -19,11 +20,12 @@ public class App {
                 if (AskQustion("The blue whale is the biggest animal to have ever lived", 0) == false) break;
                 if (AskQustion("Taste buds can only be found on the tongue", 1) == false) break;
                 JOptionPane.showMessageDialog(null, "You Win!");
-                System. exit(0);
+                GuessNumber.GuessTheNumber();
+                System.exit(0);
             }
 
             int restart = JOptionPane.showConfirmDialog(null, "Wrong answer\n Want To Retry?", null, 0);
-
+            //quits if user does not want to play again
             if (restart == 1) {
                 JOptionPane.showMessageDialog(null, "Goodbye!");
                 System. exit(0);
