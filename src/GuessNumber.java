@@ -12,6 +12,7 @@ public class GuessNumber {
             int userGuess = Integer.parseInt(JOptionPane.showInputDialog("Guess A Number From 1-100"));
 
             while (true) {
+                //checking if user is correct, higher, or lower
                 if (userGuess == randomInt) break;
 
                 else if (userGuess < randomInt) {
